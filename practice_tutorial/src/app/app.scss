@@ -2,11 +2,27 @@
   font-size: 2rem;
   font-weight: bold;
   color: #333;
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
 }
 
 .brand-logo {
   max-width: 500px;
   height:  auto;
   width: auto;
-  display: block;
+  display: inline-block;;
+}
+
+.instagram-icon {
+  max-width: 20px;
+  height:  auto;
+  width: auto;
+  display: inline-block;
+}
+
+.left-side {
+  padding-left: 40%;
+  padding-top: 1%;
+  align-items: center;
 }
