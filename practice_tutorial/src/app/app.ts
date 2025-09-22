@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-
+import { Products } from './products/products';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [Products],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrls: ['./app.scss']
 })
 export class App {
   protected title = 'practice_tutorial';
+
 }
