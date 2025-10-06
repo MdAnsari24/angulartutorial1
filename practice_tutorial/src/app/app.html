@@ -1,26 +1,28 @@
 <main>
   <img src="AZURAATTIRE_logo.png" alt="logo" class="brand-logo" aria-hidden="true">
-  <header class="brand-name">AZURA ATTIRE
-   
-  </header>
-    <div class="search-bar">
+  <header class="brand-name">AZURA ATTIRE</header>
+  <div class="search-bar">
     <input type="text" placeholder="Search...">
     <button type="submit">Search</button>
-    </div>
-    <section class="results">
-    <app-products *ngFor="let productCatalogue of productCatalogueList" [productCatalogue]="productCatalogue"></app-products>
-  </section>
+  </div>
+  
   <nav class="navbar">
     <ul class="nav-links">
       <li><a href="maintanence.html">Home</a></li>
       <li><img src="instagram-icon.ico" alt="logo" class="instagram-icon"><a href="https://www.instagram.com/azura.attire_/?utm_source=ig_web_button_share_sheet"> Instagram</a></li>
       <li><a href="maintanence.html">Contact</a></li>
-      <li><a href="products.html">Products</a></li>
+      <li><a routerLink="/products">Products</a></li>
     </ul>
-    <div class="intro">
+  </nav>
+
+  <div class="intro">
     <h1>Welcome to Azura Attire</h1>
     <p>Your one-stop shop for the latest fashion trends.</p>
   </div>
   
-</nav>
+  <!-- This is where your routed components will display -->
+  <section class="results">
+    <router-outlet></router-outlet>
+  </section>
+  </main>
 

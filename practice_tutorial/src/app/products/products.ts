@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgForOf } from '@angular/common';
 import { ProductCatalogue } from '../../../public/product-catalogue';
 
@@ -9,8 +9,7 @@ import { ProductCatalogue } from '../../../public/product-catalogue';
   styleUrl: './products.scss'
 })
 export class Products {
- @Input() productCatalogue!: ProductCatalogue;
- protected productCatalogueList: ProductCatalogue[] = [
+  protected productCatalogueList: ProductCatalogue[] = [
     {
       id: 0,
       title: 'Acme Fresh Start Housing',

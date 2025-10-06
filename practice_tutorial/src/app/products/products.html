@@ -1,5 +1,10 @@
-<section class="listing">
- <img class="listing-photo" [src]="productCatalogue.imageUrl" alt="Product Image of {{ productCatalogue.title }}">
- <h2 class="listing-heading">{{ productCatalogue.title }}</h2>
- <p class="listing-size">{{ productCatalogue.size }}</p>
- </section>
+<div class="products-container">
+    <h1>Our Products</h1>
+    <div class="products-grid">
+        <section class="listing" *ngFor="let product of productCatalogueList">
+            <img class="listing-photo" [src]="product.imageUrl" alt="Product Image of {{ product.title }}">
+            <h2 class="listing-heading">{{ product.title }}</h2>
+            <p class="listing-size">{{ product.size }}</p>
+        </section>
+</div>
+</div>
