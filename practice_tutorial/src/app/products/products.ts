@@ -14,25 +14,25 @@ export class Products {
       id: 0,
       title: 'Acme Fresh Start Housing',
       size: 'Chicago',
-      imageUrl: '/assets/bernard-hermant-CLKGGwIBTaY-unsplash.jpg'
+      imageUrl: 'model 4.jpg'
     },
     {
       id: 1,
       title: 'A113 Transitional Housing',
       size: 'CA',
-      imageUrl: '/assets/brandon-griggs-wR11KBaB86U-unsplash.jpg'
+      imageUrl: 'model 3.jpg'
     },
     {
       id: 2,
       title: 'Warm Beds Housing Support',
       size: 'AK',
-      imageUrl: '/assets/i-do-nothing-but-love-lAyXdl1-Wmc-unsplash.jpg'
+      imageUrl: 'model 2.jpg'
     },
     {
       id: 3,
       title: 'Homesteady Housing',
       size: 'Chicago',
-      imageUrl: '/assets/ian-macdonald-W8z6aiwfi1E-unsplash.jpg'
+      imageUrl: 'model 1.jpg'
     },
   ];
 }

@@ -66,17 +66,89 @@ header nav a:hover {
   color: #007bff;
 }
 
+.gallery-container {
+    display: grid;
+  /* Defines 3 columns, each taking up 1 fractional unit of space */
+  grid-template-columns: repeat(3, 100px); 
+  /* Defines 2 rows, each taking up 1 fractional unit of space */
+  grid-template-rows: repeat(2, 100px); 
+  /* Adds space between grid items */
+  grid-gap: 20px; 
+  /* Optional: set a height for the container to make rows visible */
+  height: 30px; 
+  width: 30px;
+}
+
+.gallery-item img{
+    background-color: #4CAF50;
+  border: 1px solid #ccc;
+  padding: 20px;
+  color: white;
+  width: 100px;
+  height: 100px;
+}
+
+
 .about-us{
+  display: flex;
   padding-left: 0%;
   padding-right: 35%;
-  padding-bottom: 10%;
-  padding-top:27%;
+  padding-bottom: 1%;
+  padding-top:40%;
   text-align: left;
-  gap:40px;
+  gap:90px;
 }
 
 .about{
-  display: flex;
+  
   font-weight: bold;
   font-family: 'Arial';
+  position: relative;
+}
+
+.about-img{
+  display: flex;
+  width: 150px;
+  height: 370px;
+  border-radius: 8px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #a9e1ff;
+  text-align: center;
+  padding: 0px 0px;
+  scroll-padding-top: 0px;
+  position: relative;
+  bottom: 0px;
+  height: 57px;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reserved-rights {
+  display: relative;
+}
+
+.footer-links {
+  position: relative;
+  text-align: right;
+  gap: 30px;
+  line-height: 0;
+}
+
+.social {
+  position: relative;
+  text-align: left;
+}
+
+.footer-links a {
+  position: relative;
+  text-decoration: none;
+  margin-inline-end: 15px;
+}
+
+.footer-links a:hover {
+  color: #007bff;
 }
